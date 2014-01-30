@@ -51,5 +51,5 @@ class Jovan < Sinatra::Base
 end
 
 if __FILE__ == $0
-  Jovan.run! :port => 3000
+  Jovan.run! :port => ENV['PORT']
 end
